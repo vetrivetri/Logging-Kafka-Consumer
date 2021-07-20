@@ -1,7 +1,7 @@
 package com.logging.kafka.consumer.kafkaconsumer.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.logging.kafka.consumer.kafkaconsumer.dto.SuccessRequestLog;
+import com.logging.kafka.consumer.kafkaconsumer.db.entity.SuccessRequestLog;
 import org.apache.kafka.common.serialization.Deserializer;
 
 import java.util.Map;

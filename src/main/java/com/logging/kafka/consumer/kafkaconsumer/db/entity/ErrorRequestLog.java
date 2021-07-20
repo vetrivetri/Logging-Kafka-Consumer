@@ -1,4 +1,4 @@
-package com.logging.kafka.consumer.kafkaconsumer.dto;
+package com.logging.kafka.consumer.kafkaconsumer.db.entity;
 
 public class ErrorRequestLog {
 

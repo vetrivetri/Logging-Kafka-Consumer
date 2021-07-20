@@ -1,34 +1,40 @@
-package com.logging.kafka.consumer.kafkaconsumer.dto;
+package com.logging.kafka.consumer.kafkaconsumer.db.entity;
 
+import javax.persistence.*;
 import java.util.Date;
 
+@Entity
+@Table(name = "successrequestlog")
 public class SuccessRequestLog {
 
-    private String id;
-
+    @Id
+    @Column(name = "ID")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    @Column(name = "SUCCESS_REQUEST")
     private String successRequest;
-
+    @Column(name = "SUCCESS_RESPONSE")
     private String successResponse;
-
+    @Column(name = "METHOD")
     private String method;
-
+    @Column(name = "QUERY_PARAM")
     private String queryParam;
-
+    @Column(name = "HEADERS")
     private String headers;
-
+    @Column(name = "URI")
     private String uri;
-
+    @Column(name = "CREATED_TIME")
     private Date createdTime;
-
+    @Column(name = "REQUEST_TIME")
     private Date requestTime;
-
+    @Column(name = "RESPONSE_TIME")
     private Date responsetime;
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
