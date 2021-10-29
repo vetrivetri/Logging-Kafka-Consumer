@@ -8,7 +8,7 @@ public class KafkaConsumerApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(KafkaConsumerApplication.class, args);
-		System.out.println("Test Commit For Jenkins CI");
+		System.out.println("Test Commit For Jenkins CI ");
 	}
 
 }
